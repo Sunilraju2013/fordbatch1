@@ -38,8 +38,8 @@ As an Anonymous user I want to register user
     Given Web-context is setup
 	  And the DB is empty
 	  And the following dealer to be added
-	  |FName      |LName      |email                   |phone       |password  |userTyp  |address                    |dealer Name
-	  |Suresh     |Raja       |sraja@frddlr.com           |2489970201  |78956     |dlr      |234, car street, MI-48326  |Ford Dealer
+	  |FName      |LName      |email                   |phone       |password  |userTyp  |address                    |dlrName
+	  |Suresh     |Raja       |sraja@frddlr.com        |2489970201  |78956     |dlr      |234, car street, MI-48326  |Ford Dealer
     When Client requests POST /api/user/add/userType/userDetails/sraja@frddlr.com
     Then successful response code should be 200 
 	  And result JSON should be 
@@ -54,8 +54,8 @@ As an Anonymous user I want to register user
     Given Web-context is setup
 	  And the DB is empty
 	  And the following dealer to be added
-	  |FName      |LName      |email                   |phone       |password  |userTyp  |address                    |dealer Name
-	  |Suresh     |Raja       |sraja@frddlr.com           |2489970201  |78956     |dlr      |234, car street, MI-48326  |Ford Dealer
+	  |FName      |LName      |email                   |phone       |password  |userTyp  |address                    |dlrName
+	  |Suresh     |Raja       |sraja@frddlr.com        |2489970201  |78956     |dlr      |234, car street, MI-48326  |Ford Dealer
     When Client requests POST /api/user/add/userType/userDetails/sraja@frddlr.com
     Then successful response code should be 404 
 	  And result JSON should be 
